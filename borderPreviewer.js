@@ -11,3 +11,10 @@ function ChangeBorder(){
         changer.innerHTML = "border-radius: " + input + "px;";  
     }
 }
+
+function CopyText(){
+    const text = document.getElementById('p').innerHTML;
+    navigator.clipboard.writeText(text);
+    console.log("copied: " + text);
+    alert("Copied: " + text);
+}
